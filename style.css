@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 .clearfix::after {
     content: "";
     display: block;
@@ -11,9 +15,45 @@
 }
 
 nav {
-    border-color: #343A40;
+    background-color: #343A40;
+    padding-left: 5%;
+    margin: 0 auto;
+}
+
+nav ul {
+    max-width: 1280px;
+    list-style: none;
 }
 
 nav ul li {
     float: left;
+    line-height: 70px;
+    padding: 0 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-right: 2px solid grey;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a i {
+    padding-right: 10px;
+    font-size: 24px;
+    vertical-align: -2px;
+}
+
+p {
+    margin-top: 40px;
 }
